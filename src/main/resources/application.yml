@@ -1,0 +1,11 @@
+spring:
+  data:
+    mongodb:
+      database: Movementdb
+      host: localhost
+      port: 27017
+  application:
+    name: MOVEMENT-SERVICE
+
+server:
+  port: 9294
