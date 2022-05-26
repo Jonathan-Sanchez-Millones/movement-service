@@ -1,12 +1,11 @@
 package com.bootcamp.reactive.repository;
 
-import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.repository.reactive.ReactiveCrudRepository;
+import org.springframework.data.repository.reactive.RxJava3CrudRepository;
 
 import com.bootcamp.reactive.entity.Movement;
 
 
-@Repository
-public interface MovementRepository extends ReactiveMongoRepository<Movement,String>{
+public interface MovementRepository extends ReactiveCrudRepository<Movement,String>{
 
 }
